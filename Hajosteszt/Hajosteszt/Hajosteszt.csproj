@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\cv.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\cv.html" />
   </ItemGroup>
 

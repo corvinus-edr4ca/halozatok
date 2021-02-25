@@ -1,0 +1,61 @@
+﻿body {
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto 20px auto;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+div, .szoveg {
+    padding: 20px;
+    border: 1px solid fuchsia;
+    border-radius: 20px;
+    background-color: lightblue;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h4 {
+    font-style: italic;
+}
+
+li {
+    padding: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    width: 70%;
+    margin: auto;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+a:hover {
+    color: darkorange;
+    font-style: italic;
+    background-color: antiquewhite;
+}
+
+.szoveg::first-line {
+    text-indent: 30px;
+}
+
+.szoveg::first-letter {
+    font-size: 2em;
+    color: fuchsia;
+}
+
+#alcim {
+    text-align: center;
+    background-color: yellow;
+}
