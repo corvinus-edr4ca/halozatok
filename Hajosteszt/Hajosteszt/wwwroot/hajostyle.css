@@ -5,8 +5,7 @@
 
 
 div {
-    margin: 10px;
-    
+    margin: 10px;  
 }
 
 img{
@@ -83,9 +82,4 @@ img{
     #kozepso{
         flex-direction: row;
     }
-    img{
-        resize:none;
-    }
 }
-
-
