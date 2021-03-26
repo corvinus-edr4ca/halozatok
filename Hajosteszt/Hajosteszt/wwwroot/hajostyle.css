@@ -70,13 +70,20 @@ img{
     background-color: #025955;
 }
 
-.jo:active {
+.jo{
+    background-color: green;
+}
+.jo:hover {
     background-color: green;
 }
 
-.rossz:active {
+.rossz{
     background-color: red;
 }
+.rossz:hover{
+    background-color: red;
+}
+
 
 @media screen and (min-width: 1000px){
     #kozepso{

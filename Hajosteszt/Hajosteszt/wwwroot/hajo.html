@@ -4,28 +4,27 @@
     <meta charset="utf-8" />
     <title></title>
     <link href="hajostyle.css" rel="stylesheet" />
+    <script src="hetedik.js"></script>
 </head>
 
 <body>
     <div id="kulso">
-        <div id="kerdesszoveg">
-            Kérdés: Cras ac est lacus. Aenean lacus erat, cursus semper mi at, maximus sagittis sapien. Ut at consectetur libero, eget consectetur ipsum.
-        </div>
+        <div id="kerdesszoveg"></div>
 
         <div id="kozepso">
             <div id="valaszok">
-                <div id="valasz1" class="kattinthato valasz">Válasz 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae tincidunt sem, eget consectetur turpis. Phasellus pellentesque dapibus bibendum. </div>
-                <div id="valasz2" class="kattinthato valasz jo">Válasz 2: Donec laoreet at metus eget aliquet. Aliquam eu justo felis. Vivamus faucibus pulvinar urna. Etiam nec facilisis arcu, sed suscipit dui.</div>
-                <div id="valasz3" class="kattinthato valasz rossz">Válasz 3: Cras ac est lacus. Aenean lacus erat, cursus semper mi at, maximus sagittis sapien. Ut at consectetur libero, eget consectetur ipsum.</div>
+                <div id="valasz1" class="kattinthato valasz"></div>
+                <div id="valasz2" class="kattinthato valasz"></div>
+                <div id="valasz3" class="kattinthato valasz"></div>
             </div>
             <div id="kep">
-                <img id="kep1" src="https://szoft1.comeback.hu/hajo/teszt-0050.jpg" alt="Kérdéshez tartozó kép" />
+                <img id="kep1" src="" alt="Kérdéshez tartozó kép" />
             </div>
         </div>
 
         <div id="vezerlo">
-            <div class="kattinthato gomb">Vissza</div>
-            <div class="kattinthato gomb">Előre</div>
+            <input type="button" class="kattinthato gomb" value="Vissza" onclick="lépVissza()">
+            <input type="button" class="kattinthato gomb" value="Előre" onclick="lépTovább()">
         </div>
     </div>
 </body>
