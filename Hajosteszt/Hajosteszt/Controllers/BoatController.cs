@@ -21,8 +21,18 @@ namespace Hajosteszt.Controllers
         }
 
         [HttpGet]
+        [Route("questions/count")]
+        public ActionResult M2()
+        {
+            HajostesztContext context = new HajostesztContext();
+            var összkerdes = context.Questions.Count();
+
+            return new JsonResult(összkerdes);
+        }
+
+        [HttpGet]
         [Route("questions/{sorszám}")]
-        public ActionResult M2(int sorszám)
+        public ActionResult M3(int sorszám)
         {
             HajostesztContext context = new HajostesztContext();
             var kérdés = (from x in context.Questions

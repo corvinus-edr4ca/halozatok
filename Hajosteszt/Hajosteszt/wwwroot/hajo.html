@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title></title>
     <link href="hajostyle.css" rel="stylesheet" />
-    <script src="hetedik.js"></script>
+    <script src="tizedik.js"></script>
 </head>
 
 <body>
@@ -13,9 +13,9 @@
 
         <div id="kozepso">
             <div id="valaszok">
-                <div id="valasz1" class="kattinthato valasz"></div>
-                <div id="valasz2" class="kattinthato valasz"></div>
-                <div id="valasz3" class="kattinthato valasz"></div>
+                <div id="valasz1" class="kattinthato valasz" onclick="valasztas(1)"></div>
+                <div id="valasz2" class="kattinthato valasz" onclick="valasztas(2)"></div>
+                <div id="valasz3" class="kattinthato valasz" onclick="valasztas(3)"></div>
             </div>
             <div id="kep">
                 <img id="kep1" src="" alt="Kérdéshez tartozó kép" />
@@ -23,8 +23,8 @@
         </div>
 
         <div id="vezerlo">
-            <input type="button" class="kattinthato gomb" value="Vissza" onclick="lépVissza()">
-            <input type="button" class="kattinthato gomb" value="Előre" onclick="lépTovább()">
+            <input type="button" class="kattinthato gomb" value="Vissza" id="hatragomb">
+            <input type="button" class="kattinthato gomb" value="Előre" id="eloregomb">
         </div>
     </div>
 </body>
