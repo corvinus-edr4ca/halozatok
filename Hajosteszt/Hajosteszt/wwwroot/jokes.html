@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Vccek</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <div id="jokelist"></div>
+        <div>
+            <input type="text" name="name" id="jokeText" value="Csak PC vicc" />
+        </div>
+        <button id="addButton">új vicc felvétele</button>
+    </form>
+    <script>
+        document.getElementById("addButton").addEventListener("click", () => {
+            let data = {
+                jokeText: document.getElementById("jokeText").value
+            }
+            fetch("api/jokes",
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                }
+            ).then(x => {
+                if (x.ok) {
+                    alert("Siker!")
+                }
+                else {
+                    alert("Kudarc!")
+                }
+            });
+        });
+    </script>
+</body>
+</html>
